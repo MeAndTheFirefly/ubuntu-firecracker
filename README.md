@@ -23,9 +23,7 @@ resize2fs ubuntu.ext4
 #launch firecracker
 firectl --kernel=ubuntu-vmlinux --root-drive=ubuntu.ext4 --kernel-opts="init=/bin/systemd noapic reboot=k panic=1 pci=off nomodules console=ttyS0"
 ```
-#Config to build kernel version 5.3.0, please follow the offical doc
-[build custom kernel]
-(https://github.com/firecracker-microvm/firecracker/blob/master/docs/rootfs-and-kernel-setup.md).
+#Config to build kernel version 5.3.0, please follow the [offical doc](firecracker-microvm/firecracker/blob/master/docs/rootfs-and-kernel-setup.md).
 
 ```
 wget https://raw.githubusercontent.com/firecracker-microvm/firecracker/master/resources/microvm-kernel-config
